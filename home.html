@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 3 | JS</title>
+  </head>
+  <body>
+    <h1>JS</h1>
+    <p>Results in console</p>
+  </body>
+  <script>
+    // 1
+    // Check if a triangle is equilateral, scalene or isosceles, and print which triangle is yours..
+    // Example: sides of triangle are 3, 4, 5. This is scalene triangle.
+
+    var a = 5;
+    b = 5;
+    c = 5;
+
+    if (a === b && a === c && b === c) {
+      console.log("Triangle is equilateral");
+    } else if (a === b || b === c) {
+      console.log("Triangle is isosceles");
+    } else {
+      console.log("Triangle is scalene");
+    }
+
+    console.log("_________________________");
+    // 2
+    // Perform arithmetic operations on two numbers. Operations are add, subtract, multiply, divide, modulus.
+    var x = 5;
+    y = 0;
+
+    var sum = x + y;
+    console.log("Sum of two numbers is " + sum);
+
+    var difference = x - y;
+    console.log("Difference of two numbers is " + difference);
+
+    var product = x * y;
+    console.log("Product of two numbers is " + product);
+
+    var division = x / y;
+    if (y === 0) {
+      console.log("Can't divide by Zero");
+    } else {
+      console.log("Division of two numbers is " + division);
+    }
+
+    var modulus = x % y;
+    if (modulus !== modulus) {
+      console.log("Modulus is not a number");
+    } else {
+      console.log("Modulus of two numbers is " + modulus);
+    }
+
+    console.log("_________________________");
+
+    // 3
+    // Find the grade for input marks (you should have at least two input marks).
+    // Grades are: // A (91-100), B (81-90), C (71-80), D (61-70), E (51-60). Optionally print if student has failed the exam.
+    var inputMark1 = 61;
+    var inputMark2 = 50;
+
+    if (inputMark1 <= 50 && inputMark2 <= 50) {
+      console.log("Student has failed both exams!");
+    } else {
+      if (inputMark1 > 50 && inputMark1 <= 60) {
+        inputMark1 = "E";
+      } else if (inputMark1 > 60 && inputMark1 <= 70) {
+        inputMark1 = "D";
+      } else if (inputMark1 > 70 && inputMark1 <= 80) {
+        inputMark1 = "C";
+      } else if (inputMark1 > 80 && inputMark1 <= 90) {
+        inputMark1 = "B";
+      } else if (inputMark1 > 90) {
+        inputMark1 = "A";
+      } else {
+        inputMark1 = "failed";
+      }
+      if (inputMark2 > 50 && inputMark2 <= 60) {
+        inputMark2 = "E";
+      } else if (inputMark2 > 60 && inputMark2 <= 70) {
+        inputMark2 = "D";
+      } else if (inputMark2 > 70 && inputMark2 <= 80) {
+        inputMark2 = "C";
+      } else if (inputMark2 > 80 && inputMark2 <= 90) {
+        inputMark2 = "B";
+      } else if (inputMark2 > 90) {
+        inputMark2 = "A";
+      } else {
+        inputMark2 = "failed";
+      }
+
+      console.log(
+        "Student's grades are:\n inputMark1: " +
+          inputMark1 +
+          "\n inputMark2: " +
+          inputMark2
+      );
+    }
+
+    console.log("_________________________");
+
+    // 4
+    // Create two variables (or if you know how to do it - input fields). One should be a number, other should be a noun.
+    // Print on screen the number and pluralized form, like “5 cats” or “1 dog”.
+    // Bonus: Make it handle a few collective nouns like “sheep” and “geese”.
+
+    var noun = "dog";
+    var num = 1;
+
+    if (num > 1) {
+      if (noun === "goose") {
+        console.log("geese");
+      } else if (noun === "sheep") {
+        console.log("sheep");
+      } else {
+        console.log(num + " " + noun + "s");
+      }
+    } else {
+      console.log(num + " " + noun);
+    }
+    console.log("_________________________");
+    // Write a program to show you age based on entered number (if you know how to create input field, if not create variable and give it a value).
+    // If your age is 18 or older - print “You are old enough to drive”, but if not than print how many years you need to turn 18.
+    // If your age is greater than 18 - try one example with 13.
+    var myAge = 13;
+    var untilMature = 18 - myAge;
+    if (myAge >= 18) {
+      console.log("You are old enough to drive!");
+    } else {
+      console.log(
+        "You need to wait " + untilMature + " more years to turn 18!"
+      );
+    }
+    console.log("_________________________");
+    // 6
+    // this one will continue on task 5.
+    // Create one more variable (or input field) and compare it with your age.
+    // Show how much is that older/younger than you with text for example “He/She is 13 years older/younger than me”.
+    // If you are the same age - print that you are the same age.
+    var heShe = 40;
+
+    if (heShe > myAge) {
+      var older = heShe - myAge;
+      console.log("He/She is " + older + " years older than me.");
+    } else if (heShe < myAge) {
+      var younger = myAge - heShe;
+      console.log("He/She is " + younger + " years older than me.");
+    } else {
+      console.log("You are the same age.");
+    }
+    console.log("_________________________");
+    // 7
+    // Create 5 variables (or input fields) with canine species.
+    // Create one more variable with canine and compare it with first 5 species. If it is match - write that on screen.
+    // Example: “This is German Shepherd called Neo”. If there is no match - write on screen that this is a mixed breed.
+
+    var akita = "Akita";
+    komondor = "Komondor";
+    labrador = "Labrador";
+    maltese = "Maltese";
+    mastiff = "Mastiff";
+    var newCanine = "Mastiff";
+
+    if (
+      newCanine === akita ||
+      newCanine === komondor ||
+      newCanine === labrador ||
+      newCanine === maltese ||
+      newCanine === mastiff
+    ) {
+      console.log("This is " + newCanine + ".");
+    } else {
+      console.log("This is mixed breed!");
+    }
+  </script>
+</html>
