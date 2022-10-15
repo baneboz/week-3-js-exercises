@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 3 |JS Arrays</title>
+  </head>
+  <body>
+    <h1>BIT Week 3</h1>
+    <h2>JS Arrays</h2>
+    <p>Results in console.</p>
+  </body>
+  <script>
+    // 1. Write an array of months in a year. Using console.log display June, October and January from the array.
+    var monthsInYear = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    console.log(monthsInYear[5], monthsInYear[9], monthsInYear[0]);
+
+    // separator
+    console.log("_________________________________");
+
+    // 2. Write an arrays of days in a week. Using console.log display Sunday from the array.
+    var daysInWeek = [
+      "Monday",
+      "Tuesday",
+      "Wendsdat",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ];
+    console.log(daysInWeek[6]);
+
+    // separator
+    console.log("_________________________________");
+
+    // 3. Print all negative elements from the array [2, -4, 5, -2, -11].
+    var arrOfNumbers = [2, -4, 5, -2, -11];
+    console.log(arrOfNumbers[1], arrOfNumbers[3], arrOfNumbers[4]);
+
+    // separator
+    console.log("_________________________________");
+
+    // 4. Print all elements with indices divisible by 3 from the array [5, 15, -5, 20, 12, 18, 72, 14, 9].
+    var arrOfNumbers2 = [5, 15, -5, 20, 12, 18, 72, 14, 9];
+    var divisibleBy3 = [];
+
+    if (arrOfNumbers2[0] % 3 === 0) {
+      console.log(arrOfNumbers2[0]);
+
+      // moze i dodavanje u prazan niz pa na kraju print tog novog
+      divisibleBy3[divisibleBy3.length] = arrOfNumbers2[0];
+    }
+    if (arrOfNumbers2[1] % 3 === 0) {
+      console.log(arrOfNumbers2[1]);
+
+      divisibleBy3[divisibleBy3.length] = arrOfNumbers2[1];
+    }
+    if (arrOfNumbers2[2] % 3 === 0) {
+      console.log(arrOfNumbers2[2]);
+
+      divisibleBy3[divisibleBy3.length] = arrOfNumbers2[2];
+    }
+    if (arrOfNumbers2[3] % 3 === 0) {
+      console.log(arrOfNumbers2[3]);
+
+      divisibleBy3[divisibleBy3.length] = arrOfNumbers2[3];
+    }
+    if (arrOfNumbers2[4] % 3 === 0) {
+      console.log(arrOfNumbers2[4]);
+
+      divisibleBy3[divisibleBy3.length] = arrOfNumbers2[4];
+    }
+    if (arrOfNumbers2[5] % 3 === 0) {
+      console.log(arrOfNumbers2[5]);
+      divisibleBy3[divisibleBy3.length] = arrOfNumbers2[5];
+    }
+    if (arrOfNumbers2[6] % 3 === 0) {
+      console.log(arrOfNumbers2[6]);
+      divisibleBy3[divisibleBy3.length] = arrOfNumbers2[6];
+    }
+    if (arrOfNumbers2[7] % 3 === 0) {
+      console.log(arrOfNumbers2[7]);
+      divisibleBy3[divisibleBy3.length] = arrOfNumbers2[7];
+    }
+
+    console.log(divisibleBy3);
+
+    // separator
+    console.log("_________________________________");
+
+    // 5. What is the index of number 24 in the following array?
+    // [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
+    // Using console.log:
+    // ● Display the 3rd element of the array,
+    // ● Display the 2nd element of the 3rd element.
+    var someNestedArr = [
+      [1, 2, 1, 24],
+      [8, 11, 9, 4],
+      [7, 0, 7, 27],
+      [7, 4, 28, 14],
+      [3, 10, 26, 7],
+    ];
+    console.log(
+      "Index of number " +
+        someNestedArr[0][3] +
+        " of the [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]] is: \n [0][3]"
+    );
+
+    console.log(someNestedArr[2]);
+    console.log(someNestedArr[2][1]);
+  </script>
+</html>
