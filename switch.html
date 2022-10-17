@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 3 | JS Switch</title>
+  </head>
+  <body>
+    <h1>BIT Week 3</h1>
+    <h2>JS Switch</h2>
+    <p>Results in console.</p>
+  </body>
+  <script>
+    // 1. Write a program that shows text representation of a day in a week for a number input from 1 to 7. Print output in console.
+    // For input 1, output should be “Monday”.
+    var input = 1;
+    var week = [
+      "Monday",
+      "Tuesday",
+      "Wendsdat",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ];
+    var dayOfWeek = "";
+
+    switch (input) {
+      case 1:
+        dayOfWeek = week[0];
+        break;
+
+      case 2:
+        dayOfWeek = week[1];
+        break;
+
+      case 3:
+        dayOfWeek = week[2];
+        break;
+
+      case 4:
+        dayOfWeek = week[3];
+        break;
+
+      case 5:
+        dayOfWeek = week[4];
+        break;
+
+      case 6:
+        dayOfWeek = week[5];
+        break;
+
+      case 7:
+        dayOfWeek = week[6];
+        break;
+
+      default:
+        console.log("You are speaking another language!");
+        break;
+    }
+
+    console.log(dayOfWeek);
+    // separator
+    console.log("_________________________________");
+
+    // 2. Write a program that shows text representation of a day in a week for a number input from
+    // 1 to 7. All other cases output a message explaining that input must be a number between 1 and 7.
+    // For input 1, output should be “Monday”.
+    // For input 10, output should be “Input must be a number between 1 and 7”.
+
+    var input2 = 2;
+    var dayOfWeek2 = "";
+
+    switch (input2) {
+      case 1:
+        dayOfWeek2 = week[0];
+        break;
+
+      case 2:
+        dayOfWeek2 = week[1];
+        break;
+
+      case 3:
+        dayOfWeek2 = week[2];
+        break;
+
+      case 4:
+        dayOfWeek2 = week[3];
+        break;
+
+      case 5:
+        dayOfWeek2 = week[4];
+        break;
+
+      case 6:
+        dayOfWeek2 = week[5];
+        break;
+
+      case 7:
+        dayOfWeek2 = week[6];
+        break;
+
+      default:
+        dayOfWeek2 = "Input must be a number between 1 and 7!";
+        break;
+    }
+
+    console.log(dayOfWeek2);
+    // separator
+    console.log("_________________________________");
+
+    // 3. Write a program that for a 1-7 number input (representing a day in a week) shows if that day
+    // is a weekday or weekend. All other cases output a message explaining that input must be a number between 1 and 7.
+    // For input 2, output should be “It’s weekday”.
+    // For input 6, output should be “It’s weekend”.
+    // For input 12, output should be “Input must be number between 1 and 7”.
+    var input3 = 4;
+    var dayOfWeek3 = "";
+
+    switch (input3) {
+      case 1:
+      case 2:
+      case 3:
+      case 4:
+      case 5:
+        dayOfWeek3 = "It’s weekday!";
+        break;
+
+      case 6:
+      case 7:
+        dayOfWeek3 = "It’s weekend!";
+        break;
+
+      default:
+        dayOfWeek3 = "Input must be a number between 1 and 7!";
+        break;
+    }
+
+    console.log(dayOfWeek3);
+    // separator
+    console.log("_________________________________");
+
+    // 4. Write a program that for a 1-12 number input (representing a month in a year) shows that
+    // month’s name. All other cases output a message explaining that input must be a number between 1 and 12.
+    // For input 2, output should be “February”.
+    // For input 6, output should be “June”.
+    // For input 13, output should be “Input must be a number between 1 and 12”.
+    var input4 = 12;
+    var monthsInYear = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+
+    var monthsName = "";
+
+    switch (input4) {
+      case 1:
+        monthsName = monthsInYear[0];
+        break;
+      case 2:
+        monthsName = monthsInYear[1];
+        break;
+      case 3:
+        monthsName = monthsInYear[2];
+        break;
+      case 4:
+        monthsName = monthsInYear[3];
+        break;
+      case 5:
+        monthsName = monthsInYear[4];
+        break;
+      case 6:
+        monthsName = monthsInYear[5];
+        break;
+      case 7:
+        monthsName = monthsInYear[6];
+        break;
+      case 8:
+        monthsName = monthsInYear[7];
+        break;
+      case 9:
+        monthsName = monthsInYear[8];
+        break;
+      case 10:
+        monthsName = monthsInYear[9];
+        break;
+      case 11:
+        monthsName = monthsInYear[10];
+        break;
+      case 12:
+        monthsName = monthsInYear[11];
+        break;
+      default:
+        dayOfWeek3 = "Input must be a number between 1 and 12!";
+        break;
+    }
+    console.log(monthsName);
+    // separator
+    console.log("_________________________________");
+
+    // 5. Write a program that for a 1-12 number input (representing a month in a year) shows what
+    // season it is. All inputs different from 1-12 output a message explaining that input must be a
+    // number between 1 and 12.
+    var input5 = 4;
+    var season = "";
+    switch (input5) {
+      case 12:
+      case 1:
+      case 2:
+        season = "Winter";
+        break;
+      case 3:
+      case 4:
+      case 5:
+        season = "Spring";
+        break;
+
+      case 6:
+      case 7:
+      case 8:
+        season = "Summer";
+        break;
+      case 9:
+
+      case 10:
+
+      case 11:
+        season = "Autumn";
+        break;
+      default:
+        season = "Input must be a number between 1 and 12!";
+        break;
+    }
+    console.log(season);
+    // separator
+    console.log("_________________________________");
+
+    // 6. Write a program that for a string input of a grade from “A”-“F” outputs a proper info message about that grade in the following manner:
+    // A -"Good job", B -"Pretty good", C - "Passed", D -"Not so good", F -"Failed". Input different from letters A-F outputs a message  "Unknown grade".
+    var input6 = "a";
+    var arrOfgrades = ["A", "B", "C", "D", "F"];
+    var grade = "";
+    switch (input6) {
+      case "A":
+        grade = "Good job";
+        break;
+      case "B":
+        grade = "Pretty good";
+        break;
+      case "C":
+        grade = "Passed";
+        break;
+      case "D":
+        grade = "Not so good";
+        break;
+      case "F":
+        grade = "Failed";
+        break;
+      default:
+        grade = "Unknown grade";
+        break;
+    }
+
+    console.log(grade);
+    // separator
+    console.log("_________________________________");
+
+    // 7. Write a program that takes as input a city name and outputs the country where the city is.
+    // You may choose which cities and countries you want to output yourself, however there has to be at least 5 countries and 15 cities.
+    // Note that each country must have a different number of cities.
+    // Input different from the listed cities should output a message "Please choose a different city".
+    var input7 = "Nice";
+    var country = "";
+
+    switch (input7) {
+      case "Beograd":
+      case "Kraljevo":
+      case "Leskovac":
+      case "Kragujevac":
+        country = "Serbia";
+        break;
+      case "Rome":
+      case "Milano":
+      case "Torino":
+      case "Venezia":
+      case "Bari":
+        country = "Italy";
+        break;
+      case "Paris":
+      case "Nice":
+        country = "France";
+        break;
+      case "Podgorica":
+      case "Budva":
+      case "Bar":
+        country = "Montenegro";
+        break;
+      case "Munich":
+        country = "Germany";
+        break;
+      default:
+        country = "Please choose a different city";
+        break;
+    }
+    console.log(country);
+
+    // separator
+    console.log("_________________________________");
+
+    // 8. Write a program that takes as input two numbers and a string denoting the operation (“+”, “-”, “*”, “/”) and
+    // prints out the appropriate result. Watch out for division by zero!
+
+    var numA = 2;
+    var numB = 1;
+    var operation = "/";
+    var numC = "";
+
+    switch (operation) {
+      case "+":
+        numC = numA + numB;
+        break;
+      case "-":
+        numC = numA + numB;
+        break;
+      case "*":
+        numC = numA * numB;
+        break;
+      case "/":
+        numC = numB === 0 ? "Can't divide by zero" : (numC = numA / numB);
+        break;
+      default:
+        numC = "Don't know what operator you are using!";
+        break;
+    }
+    console.log(numC);
+  </script>
+</html>
